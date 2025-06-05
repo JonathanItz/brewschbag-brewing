@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+
     <link rel="stylesheet" href="/assets/css/app.css">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.8/dist/cdn.min.js"></script>
 </head>
@@ -21,7 +25,7 @@ setTimeout(() => {
 }, 1000)
 
 setTimeout(() => {
-    document.querySelector('#main-heading').style.opacity = 1
+    document.querySelector('#content').style.opacity = 1
 }, 2000)
 "
 >
@@ -34,9 +38,15 @@ setTimeout(() => {
         alt="Brewschbag Brewing Logo"
         >
 
-        <h1 id="main-heading" style="opacity: 0;" class="transition-opacity duration-2000 ease-in-out text-center text-3xl md:text-4xl text-white w-full">
-            Concert August 2nd, 2025
-        </h1>
+        <div
+        id="content"
+        style="opacity: 0;"
+        class="transition-opacity duration-2000 ease-in-out"
+        >
+            <h1 class="text-center text-3xl md:text-4xl text-white w-full">
+                Concert August 2nd, 2025
+            </h1>
+        </div>
     </div>
 </body>
 </html>
