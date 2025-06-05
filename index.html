@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-emerald-950">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brewschbag Brewing</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.8/dist/cdn.min.js"></script>
+</head>
+<body
+class="grid place-content-center min-h-screen p-4"
+x-data
+x-init="
+setTimeout(() => {
+    document.querySelector('#main-logo').style.opacity = 1
+}, 1000)
+
+setTimeout(() => {
+    document.querySelector('#main-heading').style.opacity = 1
+}, 2500)
+"
+>
+    <div class="max-w-7xl">
+        <img
+        style="opacity: 0;"
+        class="max-w-80 mx-auto w-full transition-opacity duration-2000 ease-in-out"
+        id="main-logo"
+        src="/assets/images/logo.png"
+        alt="Brewschbag Brewing Logo"
+        >
+
+        <h1 id="main-heading" style="opacity: 0;" class="transition-opacity duration-2000 ease-in-out text-center text-3xl md:text-4xl text-white w-full">Concert August 2nd, 2026</h1>
+    </div>
+</body>
+</html>
