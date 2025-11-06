@@ -1,65 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" class="bg-emerald-950">
-<head>
+<html lang="">
+  <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brewschbag Brewing</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-
-    <meta property="og:title" content="Brewschbag Brewing">
-    <meta property="og:description" content="Brewschbag Brewing featuring Dirty Mitch and the Boys + new beers">
-    <meta property="og:image" content="https://brewschbagbrewing.com/assets/images/socials.png">
-    <meta property="og:url" content="https://brewschbagbrewing.com">
-    <meta property="og:type" content="website">
-
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Brewschbag Brewing">
-    <meta name="twitter:description" content="Brewschbag Brewing featuring Dirty Mitch and the Boys + new beers">
-    <meta name="twitter:image" content="https://brewschbagbrewing.com/assets/images/socials.png">
-    <meta name="twitter:url" content="https://brewschbagbrewing.com">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
-
-    <link rel="stylesheet" href="/assets/css/app.css">
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.8/dist/cdn.min.js"></script>
-</head>
-<body
-class="grid place-content-center min-h-screen p-4"
-x-data
-x-init="
-setTimeout(() => {
-    document.querySelector('#main-logo').style.opacity = 1
-}, 1000)
-
-setTimeout(() => {
-    document.querySelector('#content').style.opacity = 1
-}, 2000)
-"
->
-    <div class="max-w-7xl">
-        <img
-        style="opacity: 0;"
-        class="max-w-60 md:max-w-80 mx-auto w-full transition-opacity duration-2000 ease-in-out"
-        id="main-logo"
-        src="/assets/images/logo.png"
-        alt="Brewschbag Brewing Logo"
-        >
-
-        <div
-        id="content"
-        style="opacity: 0;"
-        class="transition-opacity duration-2000 ease-in-out"
-        >
-            <h1 class="text-center text-3xl md:text-4xl text-white w-full">
-                Concert August 2nd, 2025
-            </h1>
-        </div>
-    </div>
-</body>
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
 </html>
