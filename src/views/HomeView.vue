@@ -17,7 +17,7 @@ onMounted(() => {
 
 		<Transition name="fade">
 			<div class="relative z-100 transition-all" v-if="showContent">
-				<img src="/logo.png" alt="Brewshbag Brewing logo" class="size-40 mx-auto">
+				<img src="/logo.png" alt="Brewschbag Brewing logo" class="size-40 mx-auto">
 				<span class="
 					whitespace-pre-wrap bg-gradient-to-b from-emerald-400 to-white/10 bg-clip-text font-semibold leading-30 text-transparent
 					text-3xl md:text-5xl lg:text-8xl
